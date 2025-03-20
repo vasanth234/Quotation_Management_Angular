@@ -1,0 +1,2 @@
+we taking the navbar code from rfq html file and css too from youTube_project_html_templates/RFQ
+/rfq.html which created by chetan jogi-->
