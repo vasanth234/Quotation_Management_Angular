@@ -8,3 +8,5 @@ we taking the navbar code from rfq html file and css too from youTube_project_ht
 
  as this is the angular 19 automatically we are providing routes in app.routes.ts-->
 
+ CTRL+SHIFT+M is the command for getting errors to display in problems panel in visual studio
+

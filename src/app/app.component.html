@@ -23,10 +23,10 @@
           <ul class="navbar-nav">
               <!-- If User is Not Logged In -->
               <li class="nav-item">
-                  <a class="btn btn-outline-primary btn-custom mx-1" href="#"><i class="fas fa-user-plus"></i> Register</a>
+                  <a class="btn btn-outline-primary btn-custom mx-1"  routerLink="register"  href="#"><i class="fas fa-user-plus"></i> Register</a>
               </li>
               <li class="nav-item">
-                  <a class="btn btn-primary btn-custom mx-1" href="#"><i class="fas fa-sign-in-alt"></i> Login</a>
+                  <a class="btn btn-primary btn-custom mx-1"  routerLink="login"    href="#"><i class="fas fa-sign-in-alt"></i> Login</a>
               </li>
 
               <!-- If User is Logged In (Replace with dynamic check) -->
@@ -45,3 +45,5 @@
       </div>
   </div>
 </nav>
+
+<router-outlet></router-outlet>
