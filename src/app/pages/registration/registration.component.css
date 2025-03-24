@@ -136,6 +136,10 @@ body{
     white-space: nowrap; /* Prevents wrapping */
   }
 
+  .content{
+    margin-bottom:20px;
+  }
+
   button{
     margin-top:5px;
   }

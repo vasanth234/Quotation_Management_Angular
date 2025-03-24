@@ -9,24 +9,34 @@
  <body>
 	<h1>Registration</h1>
 	<div class="content">
-	<section>
+	   <section>
 		<div class="register-wrapper">
 		<div class="register-block">
 		<h3 class="register-title">Create an account</h3>
 			<p>Create an account using the form below.</p>
 			<form action="">
-			<input type="email" placeholder="Enter your email"/>
-			<input type="password" placeholder="Enter your password" />
+			<input type="text" placeholder="UserName"  name="userName" [(ngModel)]="registerform.userName"/>
+			<input type="email" placeholder="Enter Email" name="Email" [(ngModel)]="registerform.emailId" />
+			<input type="password" placeholder="Enter password" name="password" [(ngModel)]="registerform.password" />
+			<input type="text" placeholder="FullName" name="fullName" [(ngModel)]="registerform.fullName"/>
+			<div class="row">
+               <div class="col-6">
+				   <button  type="button"  (click)="setRole('Customer')" [class]="registerform.role=='Customer' ? 'btn btn-primary' : 'btn btn-success'"  >I am Customer</button>
+				 
+			   </div>
+			   <div class="col-6">
+				 
+				<button  type="button"   (click)="setRole('Vendor')" [class]="registerform.role=='Vendor' ? 'btn btn-primary' : 'btn btn-success'" >I am Vendor</button>
+			   </div>
+			</div>
             <span class="line">Already have an account?.<a href="/login">Login</a></span>
             <br/>
-		<button type="submit">Submit</button>
+		<button type="submit" class="btn btn-warning"  (click)="onSave()">Submit</button>
 			</form>
 		</div>
 		</div>
 	</section>
 </div>
-	<footer>
-		<a href="https://twitter.com/Lilykhan786" target="_blank">Lily.</a>
-	</footer>
+	
 </body>
 </html>
